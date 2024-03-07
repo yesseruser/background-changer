@@ -1,5 +1,5 @@
 {
-    "manifest-version": 2,
+    "manifest_version": 2,
     "name": "Background Changer",
     "description": "Changes background of google.com",
     "version": "1.0.0",
@@ -15,5 +15,8 @@
             "128": "/images/icon128.png"
         }
     },
-    "content_scripts": [{}]
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"]
+    }]
 }
